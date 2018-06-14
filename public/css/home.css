@@ -1,0 +1,52 @@
+.center-img{
+    display: block;
+    margin: auto;
+}
+.container{
+    background-color: #fff !important;
+}
+.product {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  background-color: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  width: 80%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.product:hover .image {
+  opacity: 0.3;
+}
+
+.product:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

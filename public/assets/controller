@@ -1,0 +1,92 @@
+
+<?php
+
+class {table}Controller extends BaseController {
+
+    public function __construct() {
+        parent::__construct();
+    }
+
+    public function index() {
+        $model = new {table}Model();
+        $data = array(
+            '{stable}' => $model->getAll()
+        );
+        $this->view->render('{stable}/index', $data);
+    }
+
+    public function detail($id) {
+        $model = new {table}Model();
+        $data = array(
+            '{stables}' => $model->getById($id)[0]
+        );
+        $this->view->render('{stable}/detail', $data);
+    }
+
+    public function create() {
+
+        if (parent::getData()) {
+            $model = new {table}Model();
+            $data = array();
+            {create}
+            if ($model->insert($data)) {
+                header("Location: " . SITE_ROOT . '{table}');
+                die();
+            } else {
+                $this->view->render('{stable}/create_update', array('result' => false));
+            }
+        } else {
+            $this->view->render('{stable}/create_update');
+        }
+    }
+
+    //get
+    public function update($id) {
+        $model = new {table}Model();
+        if (parent::getData()) {
+            $data = array();
+            {update}
+            if ($model->updateById($data, $id)) {
+                $data1 = array(
+                    '{stables}' => $model->getById($id)[0],
+                    'result' => true
+                );
+                $this->view->render('{stable}/create_update', $data1);
+            } else {
+                $this->view->render('{stable}/create_update', array('result' => false));
+            }
+        } else {
+            $data = array(
+                '{stables}' => $model->getById($id)[0]
+            );
+            $this->view->render('{stable}/create_update', $data);
+        }
+    }
+
+    public function delete($id) {
+        $model = new {table}Model();
+        $data = array(
+            'delete' => $model->deleteById($id)
+        );
+        $this->view->render('{stable}/delete', $data);
+    }
+
+    public function search() {
+        $data = array();
+        $model = new {table}Model();
+        if (parent::getData()) {
+            $arr = array();
+            {search}
+            if (count($arr) > 0) {
+                $data["{stable}"] = $model->getByColumns($arr);
+                $data["search"] = true;
+            } else {
+                $data["{stable}"] = $model->getAll();
+            }
+        } else {
+            $data["{stable}"] = $model->getAll();
+        }
+        $this->view->render('{stable}/index', $data);
+    }
+
+}

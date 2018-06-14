@@ -1,0 +1,29 @@
+<div class="row">
+    <form method="POST" action="<?php
+    if (isset($this->{stables})) {
+        echo SITE_ROOT . "{table}/update/" . $this->{stables}->Id;
+    } else {
+        echo SITE_ROOT . "{table}/create";
+    }
+    ?>">
+        {fields}
+        <button type="submit">
+            <?php
+            if (isset($this->{stables})) {
+                echo "Update";
+            } else {
+                echo "Create";
+            }
+            ?>
+        </button>
+        <button type="reset">cancel</button>
+    </form>
+</div>
+<?php
+if (isset($this->result)) {
+    if ($this->result) {
+        echo '<h1>Create/Update is successful...</h1>';
+    } else {
+        echo '<h1>Create/Update have an error...</h1>';
+    }
+}

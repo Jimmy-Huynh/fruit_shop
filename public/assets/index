@@ -1,0 +1,49 @@
+<form name="" id="datalist" action="<?php echo SITE_ROOT; ?>{table}/search" method="POST">
+    <table id="search" style="width: 100%;">
+        <thead>
+            <tr>
+                {title}
+                <td colspan="3">
+                    <a href="<?php echo SITE_ROOT . '{table}/create' ?>">Create</a>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {search}
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <?php
+            if (isset($this->{stable})) {
+
+                if (isset($this->search)) {
+                    $data = $this->{stable};
+                } else {
+                    $p = new HTPagination();
+                    $data = $p->getdata($this->{stable});
+                }
+                ?>
+                <?php
+                foreach ($data as ${stable}) {
+                    ?>
+                    <tr>
+                        {display}
+                        <td><a href="<?php echo SITE_ROOT . '{table}/detail/' . ${stable}->Id ?>"><i class="glyphicon glyphicon-file"></i></a></td>
+                        <td><a href="<?php echo SITE_ROOT . '{table}/update/' . ${stable}->Id ?>"><i class="glyphicon glyphicon-pencil"></i></a></td>
+                        <td><a href="<?php echo SITE_ROOT . '{table}/delete/' . ${stable}->Id ?>"><i class="glyphicon glyphicon-trash"></i></a></td>
+                    </tr>
+                    <?php
+                }
+            }
+            ?>
+        </tbody>
+    </table>
+</form>
+<?php
+if (isset($this->search)) {
+    
+} else {
+    $p->pagination($this->{stable});
+}
