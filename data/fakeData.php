@@ -30,7 +30,7 @@ return array(
             'name' => 'Hand bag',
             'review' => 10,
             'vote' => '91% of buyers enjoyed this product! (87 votes)',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
@@ -39,7 +39,7 @@ return array(
             'name' => 'Hand bag',
             'review' => 10,
             'vote' => '91% of buyers enjoyed this product! (87 votes)',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
@@ -48,7 +48,7 @@ return array(
             'name' => 'Hand bag',
             'review' => 10,
             'vote' => '91% of buyers enjoyed this product! (87 votes)',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
@@ -57,14 +57,14 @@ return array(
             'name' => 'Hand bag',
             'review' => 10,
             'vote' => '91% of buyers enjoyed this product! (87 votes)',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
         array(
             'id' => 5,
             'name' => 'Hand bag',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
@@ -73,14 +73,14 @@ return array(
             'name' => 'Hand bag',
             'review' => 10,
             'vote' => '91% of buyers enjoyed this product! (87 votes)',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
         array(
             'id' => 7,
             'name' => 'Hand bag',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
@@ -89,7 +89,7 @@ return array(
             'name' => 'Hand bag',
             'review' => 10,
             'vote' => '91% of buyers enjoyed this product! (87 votes)',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
@@ -98,7 +98,7 @@ return array(
             'name' => 'Hand bag',
             'review' => 10,
             'vote' => '91% of buyers enjoyed this product! (87 votes)',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
@@ -107,7 +107,7 @@ return array(
             'name' => 'Hand bag',
             'review' => 10,
             'vote' => '91% of buyers enjoyed this product! (87 votes)',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
@@ -116,7 +116,7 @@ return array(
             'name' => 'Hand bag',
             'review' => 10,
             'vote' => '91% of buyers enjoyed this product! (87 votes)',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
@@ -125,7 +125,7 @@ return array(
             'name' => 'Hand bag',
             'review' => 10,
             'vote' => '91% of buyers enjoyed this product! (87 votes)',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         ),
@@ -134,7 +134,7 @@ return array(
             'name' => 'Hand bag',
             'review' => 10,
             'vote' => '91% of buyers enjoyed this product! (87 votes)',
-            'image' => SITE_ROOT . 'public/img/img1.jpg',
+            'image' => SITE_ROOT . 'public/img/Concept_01_Home_Fullwidth_0001s_0001s_0000s_0000s_0000_qua-bo.png',
             'price' => 200000,
             'description' => 'This is new product'
         )

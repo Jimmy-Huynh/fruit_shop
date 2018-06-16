@@ -1,20 +1,20 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #fff;
 }
 
 
@@ -23,31 +23,43 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding: 60px 15px 0;
+    padding: 60px 15px 0;
 }
 .container .text-muted {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 .footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 code {
-  font-size: 80%;
+    font-size: 80%;
 }
 
 .cart-number{
     border-radius: 16px;
     background-color: #62cc73;
     position: absolute;
-    top: 32px;
-    left: 16px;
-    color: red;
+    top: 8px;
+    left: 24px;
+    color: #fff;
     font-weight: bold;
-    width: 24px;
+    width: 16px;
     text-align: center;
     vertical-align: top;
-    line-height: 24px;
+    line-height: 16px;
+}
+
+.active-custom{
+    background-color: #fff;
+    border-bottom: 2px solid green;
+}
+.active-custom a{
+    color: green !important;
+}
+.navbar-default .navbar-nav>li>a{
+    font-weight: bold;
+    font-size: 8pt !important;
 }

@@ -2,8 +2,8 @@
 
 session_start();
 //define constants SITE_ROOT
-defined('SITE_ROOT') or define('SITE_ROOT', 'http://localhost/shop/');
-defined('SITE_PATH') or define('SITE_PATH', dirname(__DIR__) . '/shop/');
+defined('SITE_ROOT') or define('SITE_ROOT', 'http://localhost/fruit_shop/');
+defined('SITE_PATH') or define('SITE_PATH', dirname(__DIR__) . '/fruit_shop/');
 
 //setup fakeData
 $fakeData = require 'data/fakeData.php';
