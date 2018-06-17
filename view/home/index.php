@@ -63,9 +63,7 @@
 
     <!-- Tab panes -->
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="home">MÓN MỚI</div>
-        <div role="tabpanel" class="tab-pane" id="profile">TRÁI CÂY TƯƠI</div>
-        <div role="tabpanel" class="tab-pane" id="messages">
+        <div role="tabpanel" class="tab-pane active" id="home">
             <div class="row" style="margin-top: 10px;">
                 <?php
                 $count = 0;
@@ -78,6 +76,12 @@
                         <div style="border: 1px solid; padding-left: 8px; padding-right: 8px; padding-top: 16px; padding-bottom: 16px;">
                             <img src="<?php echo $value['image']; ?>" width="150" height="200" class="center-img"/>
                             <p style="text-align: center; font-weight: bold; color: #0076ad;"><?php echo $value['name']; ?></p>
+                            <div class="overlay">
+                                <div class="text">
+                                    <button class="like btn btn-default" type="button">
+                                        <span class="glyphicon glyphicon-eye-open"></span></button></div>
+                                <!--<img src="public/img/cart.png" width="40" height="40" class="center-img"/>-->
+                            </div>
                         </div>
 
                     </div>
@@ -104,8 +108,34 @@
                 </ul>
             </div>
         </div>
+        <div role="tabpanel" class="tab-pane" id="profile">TRÁI CÂY TƯƠI</div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+
+        </div>
     </div>
 
 </div>
 
 
+<div style="min-height: 250px; width: 100%; background-color: #ccc;">
+
+</div>
+<div style="min-height: 250px; width: 100%; background-color: #ccc; margin-top: 16px;">
+    <p>Gửi thông tin bạn để được hưởng ưu đãi</p>
+    <p>Gửi thông tin bạn để được hưởng ưu đãi</p>
+    <input type="text" />
+</div>
+<div style="min-height: 250px; width: 100%; background-color: #ccc; margin-top: 16px;">
+    <div class="col-lg-3" style="display: inline-block;">
+        <img src="<?php echo SITE_ROOT; ?>public/img/logo.png" style="width: 52px; height: 48px; display: inline-block" alt="Logo">
+        <span>
+            <p>MIỄN PHÍ VẬN CHUYỂN</p>
+            <p>Với hóa đơn từ 200.000đ</p>
+        </span>
+    </div>
+    <div class="col-lg-3">
+
+    </div>
+    <div class="col-lg-3"></div>
+    <div class="col-lg-3"></div>
+</div>
